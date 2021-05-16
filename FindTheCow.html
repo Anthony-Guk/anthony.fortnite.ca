@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel='shortcut icon' type='image/x-icon' href='favicon.ico'/>
+        <title>
+            Anthony's Ultimate Quiz
+        </title>
+        <audio id="cow-sound" src="audio/cow-sound.ogg" preload="auto"></audio>
+        <!-- Google Analytics -->
+        <script>
+            window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+            ga('create', 'UA-180189128-1', 'auto');
+            ga('send', 'pageview');
+        </script>
+        <script async src='https://www.google-analytics.com/analytics.js'></script>
+        <!-- End Google Analytics -->
+    </head>
+    <body id="Cows">
+        <header class="middle-text">
+            <h1 style="color: red;">Find The Cow</h1>
+        </header>
+        <div class="inline-block" onclick="document.getElementById('cow-sound').play() && showCow();">
+            <img src="images/Cow.png" alt="Cow">
+        </div>
+        <a href="Quiz3.html" class="underline-off">
+            <button class="middle-block display-block font-big hidden" id="cowButton">
+                Continue
+            </button>
+        </a>
+        <script>
+            function showCow() {
+              var x = document.getElementById("cowButton");
+              if (x.style.display === "none") {
+                x.style.display = "block";
+              } else {
+                x.style.display = "none";
+              }
+            }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,42 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Quiz</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+        <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script defer src="js/quiz2.js"></script>
+    </head>
+
+    <body>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col align-items-center"">
+                    <div id="roundNumber"></div>
+                    <div id="lives"></div>
+                    <div id="score"></div>
+                </div>
+            </div>
+        </div>
+        <div class="jumbotron d-flex align-items-center min-vh-100">
+            <div class="container-fluid">
+                <div id="quiz">
+                    <div class="row justify-content-center text-center" >
+                        <div class="col mb-4 align-items-center">
+                            <div id="question-title"></div>
+                        </div>
+                    </div>
+                    <div class="row justify-content-center text-center">
+                        <div class="col">
+                            <button class="btn btn-primary" onClick="handleClick(this)" id="questionA"></button>
+                            <button class="btn btn-primary" onClick="handleClick(this)" id="questionB"></button>
+                            <button class="btn btn-primary" onClick="handleClick(this)" id="questionC"></button>
+                            <button class="btn btn-primary" onClick="handleClick(this)" id="questionD"></button>
+                        </div>
+                    </div>
+                <div>
+            </div>
+        </div>
+    </body>
+</html>

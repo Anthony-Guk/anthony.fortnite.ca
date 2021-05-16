@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel='shortcut icon' type='image/x-icon' href='favicon.ico'/>
+        <title>
+            Anthony's Ultimate Quiz
+        </title>
+        <!-- Google Analytics -->
+        <script>
+            window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+            ga('create', 'UA-180189128-1', 'auto');
+            ga('send', 'pageview');
+        </script>
+        <script async src='https://www.google-analytics.com/analytics.js'></script>
+        <!-- End Google Analytics -->
+    </head>
+    <body>
+        <div class="middle-text middle-text-center font-big">
+            <header class="middle-text">
+                <h1>Anthony's Ultimate Quiz</h1>
+            </header>
+            <h2>
+                What is the answer to 3 ÷ 0
+            </h2>
+            <form onsubmit="event.preventDefault();">
+                <label for="fname">Type your answer: </label>
+                <input type="text" id="fname" name="fname"><br>
+            </form>
+              <br>
+              <button onclick="myFunction()">Enter</button>
+        </div>
+        <script>
+            async function myFunction() {
+              if(document.getElementById("fname").value == "undefined" || document.getElementById("fname").value == "Undefined"){
+                document.body.style.backgroundColor = "green";
+                await new Promise(r => setTimeout(r, 1000));
+                window.location.href = "FindTheCow.html";
+              }
+              else{
+                document.getElementById("fname").value = "Incorrect";
+                document.body.style.backgroundColor = "red";
+              }
+            }
+        </script>
+    </body>
+</html>

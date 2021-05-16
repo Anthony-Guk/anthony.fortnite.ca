@@ -1,0 +1,67 @@
+/* CSS For Anthony's Website */
+/* Last modified 2020-09-30 */
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+button {
+    font-size: inherit;
+}
+input {
+    font-size: inherit;
+}
+.tooltip {
+    position: relative;
+    display: inline-block;
+}
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+}
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
+.middle-text-center {
+    text-align: center; 
+    margin-top: 10%;
+}
+.middle-text {
+    text-align: center; 
+}
+.middle-block { 
+    margin: auto;
+}
+.display-block {
+    display: block;
+}
+.inline-block {
+    display: inline-block;
+}
+.hidden {
+    display: none;
+}
+.underline-off {
+    text-decoration: none;
+}
+.font-big {
+    font-size: 40px;
+}
+#Correct {
+    background-color: rgb(37, 175, 37);
+    background-image: url('../images/Confetti.gif');
+}
+#Cows {
+    background-image: url('../images/Cow.png');
+}
+#EvilCows {
+    background-image: url('../images/Evil-Cow.png');
+}
+#NextPage {
+    display: none;
+}
